@@ -19,16 +19,9 @@ const DonutChart = () => {
             const myLabels = data.map(x => x.sellerName);
             const mySeries = data.map(x => x.sum);
     
-            setChartData({labels: myLabels, series: mySeries});
-        })
-    }, []);
-
-    
-
-    //const mockData = {
-    //    series: [477138, 499928, 444867, 220426, 473088],
-    //    labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-    //}
+            setChartData({ labels: myLabels, series: mySeries});
+        });
+    }, []);    
     
     const options = {
         legend: {
